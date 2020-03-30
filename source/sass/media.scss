@@ -1,0 +1,23 @@
+@mixin breakpointS() {
+  @media (min-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin breakpointMd() {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin breakpointXl() {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin retina() {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
